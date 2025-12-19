@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__cgov-mcp__list_tables",
+      "mcp__cgov-mcp__describe_table",
+      "mcp__cgov-mcp__query_database",
+      "mcp__cgov-mcp__get_vision_kpis",
+      "mcp__cgov-mcp__search_vision_2030",
+      "mcp__cgov-mcp__get_vision_section"
+    ]
+  }
+}

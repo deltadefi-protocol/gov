@@ -88,11 +88,11 @@ Key activities:
 
 - Improve **matching engine robustness**, latency and failure-mode handling on Hydra;
 - Strengthen **risk controls, monitoring and incident response** for production use;
-- Complete **security reviews and targeted audits** of critical components (on-chain scripts, Hydra integration, off-chain engine);
+- Complete **security reviews and targeted audits** of critical components (on-chain scripts, Hydra integration);
 - Improve **API stability, documentation and sandbox environments** so professional traders and bots can integrate with confidence; and
 - Deliver and maintain a **public status page** for uptime and incident reporting.
 
-**Outcome:** Cardano has a live, hardened Hydra spot DEX that can realistically serve as a primary venue for order-book trading in ADA and key ADA-centric CNT pairs.
+**Outcome:** Cardano has a live, hardened Hydra spot DEX that can realistically serve as a primary venue for order-book trading in ADA and key CNT pairs.
 
 ### 2. Scaling infrastructure and integrations
 
@@ -102,7 +102,7 @@ Key activities:
 
 - Scale **Hydra and indexing infrastructure** to handle growing order and volume loads;
 - Improve **wallet and protocol integrations**, making it easy for users and other Cardano dApps to use DeltaDeFi as a liquidity source;
-- Extend markets to include **other core USD-centric pairs**, and selected CNT pairs where depth and tight spreads matter; and
+- Extend markets to include other pairs, and selected CNT pairs where depth and tight spreads matter; and
 - Design the platform so that **AI-driven liquidity agents and automated trading systems** can integrate via APIs in future roadmap phases, without adding complexity to this budget period.
 
 **Outcome:** DeltaDeFi functions as a **reliable, API-friendly trading venue** that Cardano projects, CNT issuers and larger participants can build on.
@@ -163,9 +163,9 @@ DeltaDeFi will build and maintain a **public dashboard** structured around the *
 | Metric                         | Scope                   | Description                            |
 | ------------------------------ | ----------------------- | -------------------------------------- |
 | **Slippage (1k/10k/100k ADA)** | Top 3 DEXs + DeltaDeFi  | Execution cost at standard trade sizes |
-| **Bid-Ask Spread**             | Top 3 DEXs + DeltaDeFi  | Average spread for ADA/USDM            |
 | **Depth within ±1%**           | Top 3 DEXs + DeltaDeFi  | Available liquidity near mid-price     |
 | **CEX Price Gap**              | Cross-DEX vs Top 3 CEXs | Deviation from CEX reference mid       |
+| **Bid-Ask Spread**             | DeltaDeFi               | Average spread for ADA/USDM            |
 
 #### Scalability KPIs (Vision 2030: L2 Integration, 3x Throughput)
 
@@ -179,7 +179,6 @@ DeltaDeFi will build and maintain a **public dashboard** structured around the *
 
 - **Baseline comparison toggle**: Compare current metrics against initial report
 - **Historical trends**: Track KPI progress over the 6-month period
-- **Open methodology**: Documented queries and methods published under open licence
 
 ### 3. Final 6-month Vision 2030 Progress Report
 
@@ -225,16 +224,6 @@ If the DAC multisig (4-of-6) votes to stop the project:
 3. A public report detailing the reason for suspension will be published within 14 days.
 
 Any unused funds from completed phases will also be returned to the Treasury at project conclusion.
-
-### Summary
-
-| Safeguard            | Description                                                    |
-| -------------------- | -------------------------------------------------------------- |
-| Phased Release       | 3 tranches tied to project timeline                            |
-| Independent Approval | Per Administration Committee multisig for Phase 2 & 3          |
-| Founder Recusal      | DeltaDeFi representatives excluded from release votes          |
-| Fund Return          | DAC multisig vote to stop = remaining funds return to Treasury |
-| Transparency         | Public report required if project suspended                    |
 
 ---
 
@@ -316,7 +305,7 @@ This proposal supports multiple pillars of the **Cardano Vision 2030** strategic
 
 Note: The **Monthly Transactions** KPI (≥27M) measures L1 on-chain activity. As a Hydra-based L2 solution, DeltaDeFi contributes indirectly through L1 settlement transactions rather than direct transaction count. This aligns with Vision 2030's L2 integration strategy where "high-volume activity can move off L1 and settle back."
 
-## Suggested KPIs for This Proposal
+## KPIs for This Proposal
 
 ### Ecosystem Impact
 
