@@ -347,11 +347,11 @@ This aligns with Vision 2030's L2 integration strategy: "high-volume activity ca
 
 ### Budget Efficiency vs KPI Contribution
 
-| Metric                    | Value                  |
-| ------------------------- | ---------------------- |
-| Budget Requested          | ₳1.5M                  |
-| Estimated 5-Year Treasury | ₳1,750M (350M NCL × 5) |
-| **Budget Utilization**    | **0.086%**             |
+| Metric                    | Value                 |
+| ------------------------- | --------------------- |
+| Budget Requested          | ₳1.5M                 |
+| Estimated 5-Year Treasury | ₳1,000M (200M NCL × 5) |
+| **Budget Utilization**    | **0.15%**             |
 
 **Weighted KPI Contribution** (equal weight across 9 KPIs):
 
@@ -367,7 +367,7 @@ This aligns with Vision 2030's L2 integration strategy: "high-volume activity ca
 
 | Input              | Output                          | Efficiency   |
 | ------------------ | ------------------------------- | ------------ |
-| 0.086% of treasury | 0.68% weighted KPI contribution | **7.9x ROI** |
+| 0.15% of treasury  | 0.68% weighted KPI contribution | **4.5x ROI** |
 
 ---
 
