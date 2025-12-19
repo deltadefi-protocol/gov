@@ -294,36 +294,26 @@ This proposal supports multiple pillars of the **Cardano Vision 2030** strategic
 | **L2 → L1 Value Retention** – "Layer 2 solutions contribute value back to the L1 protocol"   | Settlement fees from Hydra activity flow back to L1                  |
 | **Scalability** – "3x current throughput capacity"                                           | Validates L2 scaling approach for high-volume use cases              |
 
-## Contribution to Vision 2030 KPIs
-
-| Vision 2030 KPI             | 2030 Target | DeltaDeFi Impact                                 |
-| --------------------------- | ----------- | ------------------------------------------------ |
-| **Total Value Locked**      | $3B         | Attracts liquidity via competitive trading       |
-| **Monthly Active Users**    | 1M          | Professional and retail traders                  |
-| **Annual Protocol Revenue** | ≥16M ADA    | L1 settlement fees from Hydra activity           |
-| **Throughput Capacity**     | 3x current  | Proves L2 can handle high-volume activity off L1 |
-
-Note: The **Monthly Transactions** KPI (≥27M) measures L1 on-chain activity. As a Hydra-based L2 solution, DeltaDeFi contributes indirectly through L1 settlement transactions rather than direct transaction count. This aligns with Vision 2030's L2 integration strategy where "high-volume activity can move off L1 and settle back."
-
 ## KPIs for This Proposal
 
 ### Ecosystem Impact
 
-| KPI                            | 6-Month Target       | Measurement              |
-| ------------------------------ | -------------------- | ------------------------ |
-| **DeltaDeFi TVL**              | Measurable growth    | On-chain locked value    |
-| **Monthly Trading Volume**     | Production-scale     | Matched order volume     |
-| **Active Traders (MAU)**       | Growth from beta     | Unique trading addresses |
-| **L1 Settlement Transactions** | Documented footprint | L1 txs from DeltaDeFi    |
+| KPI                            | 6-Month Target        | Measurement              |
+| ------------------------------ | --------------------- | ------------------------ |
+| **DeltaDeFi TVL**              | ≥$10M                 | On-chain locked value    |
+| **Monthly Trading Volume**     | ≥$30M                 | Matched order volume     |
+| **Active Traders (MAU)**       | ≥1,000 unique traders | Unique trading addresses |
+| **L1 Settlement Transactions** | ≥5,000 txs/month      | L1 txs from DeltaDeFi    |
+| **L2 Transactions**            | 1M/month              | Scaling efficiency       |
 
 ### Market Quality (per dashboard and reports)
 
-| KPI                             | Target                  | Measurement              |
-| ------------------------------- | ----------------------- | ------------------------ |
-| **ADA/USDM Slippage (10k ADA)** | Improvement vs baseline | Simulated execution cost |
-| **Bid-Ask Spread**              | Tighter than baseline   | Average spread           |
-| **Price Gap vs CEX**            | Reduced gap             | Deviation from CEX mid   |
-| **Depth within ±1%**            | Increased               | Near-mid liquidity       |
+| KPI                             | Target                      | Measurement              |
+| ------------------------------- | --------------------------- | ------------------------ |
+| **ADA/USDM Slippage (10k ADA)** | ≤0.3%                       | Simulated execution cost |
+| **Bid-Ask Spread**              | ≤0.5%                       | Average spread           |
+| **Price Gap vs CEX**            | ≤1% deviation               | Deviation from CEX mid   |
+| **Depth within ±1%**            | ≥$100k equivalent liquidity | Near-mid liquidity       |
 
 ### Operational
 
@@ -334,6 +324,50 @@ Note: The **Monthly Transactions** KPI (≥27M) measures L1 on-chain activity. A
 | **Baseline Report**  | Month 1-2                                  |
 | **Dashboard Live**   | Month 2-3                                  |
 | **Final Report**     | Month 6                                    |
+
+## Contribution to Vision 2030 KPIs
+
+Vision 2030 defines 9 core KPIs. DeltaDeFi directly contributes to 5 of them:
+
+| Vision 2030 KPI          | Current  | 2030 Target | DeltaDeFi 6-Mo Target | Contribution |
+| ------------------------ | -------- | ----------- | --------------------- | ------------ |
+| **TVL**                  | $200M    | $3B         | $10M                  | 0.33%        |
+| **MAU**                  | 100-300k | 1M          | 1,000 traders         | 0.10%        |
+| **Monthly Transactions** | 800k     | 27M         | 5,000 L1 settlements  | 0.02% (L1)   |
+| **Protocol Revenue**     | 3.5M ADA | ≥16M ADA    | ~10k ADA/yr           | 0.06%        |
+| **Throughput Capacity**  | 300k/day | 3x current  | 1M L2 tx/month        | **5.56%**    |
+
+**KPIs Not Addressed:** Uptime (99.98%), Voting Power Distribution, Alternative Node Clients, DRep Participation.
+
+### Throughput Contribution Analysis
+
+The **Throughput Capacity** KPI is DeltaDeFi's strongest contribution. Based on Cardano's L1 theoretical maximum of 46.7M tx/month ([Chainspect](https://chainspect.app/chain/cardano): 18.02 TPS), the 3x target requires closing an 18M tx/month gap. DeltaDeFi's 1M L2 transactions per month represents **5.56%** of this gap via L2 scaling.
+
+This aligns with Vision 2030's L2 integration strategy: "high-volume activity can move off L1 and settle back." DeltaDeFi demonstrates a **200:1 L2-to-L1 efficiency ratio** (1M L2 transactions settled via 5,000 L1 transactions).
+
+### Budget Efficiency vs KPI Contribution
+
+| Metric                    | Value                  |
+| ------------------------- | ---------------------- |
+| Budget Requested          | ₳1.5M                  |
+| Estimated 5-Year Treasury | ₳1,750M (350M NCL × 5) |
+| **Budget Utilization**    | **0.086%**             |
+
+**Weighted KPI Contribution** (equal weight across 9 KPIs):
+
+| KPI                    | Contribution | Weight (1/9) | Weighted  |
+| ---------------------- | ------------ | ------------ | --------- |
+| TVL                    | 0.33%        | 11.1%        | 0.037%    |
+| MAU                    | 0.10%        | 11.1%        | 0.011%    |
+| Monthly Txs            | 0.02%        | 11.1%        | 0.002%    |
+| Protocol Revenue       | 0.06%        | 11.1%        | 0.007%    |
+| Throughput             | 5.56%        | 11.1%        | 0.618%    |
+| 4 KPIs (not addressed) | 0%           | 44.4%        | 0%        |
+| **Total**              |              |              | **0.68%** |
+
+| Input              | Output                          | Efficiency   |
+| ------------------ | ------------------------------- | ------------ |
+| 0.086% of treasury | 0.68% weighted KPI contribution | **7.9x ROI** |
 
 ---
 
