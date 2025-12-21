@@ -52,7 +52,20 @@ Hydra offers the latency and UX profile needed for modern trading but is still u
   - Project Catalyst delivery; and
 - Focused on **spot trading and API-driven participants**, where reliable execution and transparent metrics matter most.
 
-Earlier Project Catalyst funding helped bootstrap the current codebase and beta deployment with relatively modest budgets. This proposal is intended to take that work from “working beta” to **robust, measurable infrastructure** for the whole ecosystem.
+Earlier Project Catalyst funding helped bootstrap the current codebase and beta deployment with relatively modest budgets. This proposal is intended to take that work from "working beta" to **robust, measurable infrastructure** for the whole ecosystem.
+
+## Team Backgroun
+
+DeltaDeFi is built by the same team behind **SIDAN Lab**, with a multi-year track record in the Cardano ecosystem:
+
+- **MeshJS Core Maintainers**: The team maintains [MeshJS](https://meshjs.dev), the largest TypeScript SDK in the Cardano ecosystem, used by numerous dApps and developers for wallet integration, transaction building, and smart contract interaction.
+- **Stake Pool Operators & DReps**: Single SPO (SIDAN) since 2021 and an active DRep in Cardano governance.
+- **Cardano Hong Kong Community**: Active contributors to the Cardano HK community, organizing meetups, workshops, and developer education initiatives.
+- **Open Source Commitment**: Consistent delivery of open-source tooling and infrastructure, with MeshJS serving as critical developer infrastructure across the ecosystem.
+- **Extensive open source footprint** - 47 public repositories on [GitHub](https://github.com/sidan-lab) including multi-language Cardano SDKs: Whisky (Rust), Vodka (Aiken), Rum (Go), and Gin (Python), all Apache-2.0 licensed
+- **Project Catalyst Track Record**: Multiple successfully delivered Catalyst projects spanning SDK development, developer tooling, and infrastructure.
+
+This background in developer tooling and infrastructure directly informs DeltaDeFi's approach: building robust, well-documented, API-first trading infrastructure that other projects can integrate with.
 
 ## Direct relevance to ADA and CNT holders
 
@@ -347,11 +360,11 @@ This aligns with Vision 2030's L2 integration strategy: "high-volume activity ca
 
 ### Budget Efficiency vs KPI Contribution
 
-| Metric                    | Value                 |
-| ------------------------- | --------------------- |
-| Budget Requested          | ₳1.5M                 |
+| Metric                    | Value                  |
+| ------------------------- | ---------------------- |
+| Budget Requested          | ₳1.5M                  |
 | Estimated 5-Year Treasury | ₳1,000M (200M NCL × 5) |
-| **Budget Utilization**    | **0.15%**             |
+| **Budget Utilization**    | **0.15%**              |
 
 **Weighted KPI Contribution** (equal weight across 9 KPIs):
 
@@ -365,9 +378,9 @@ This aligns with Vision 2030's L2 integration strategy: "high-volume activity ca
 | 4 KPIs (not addressed) | 0%           | 44.4%        | 0%        |
 | **Total**              |              |              | **0.68%** |
 
-| Input              | Output                          | Efficiency   |
-| ------------------ | ------------------------------- | ------------ |
-| 0.15% of treasury  | 0.68% weighted KPI contribution | **4.5x ROI** |
+| Input             | Output                          | Efficiency   |
+| ----------------- | ------------------------------- | ------------ |
+| 0.15% of treasury | 0.68% weighted KPI contribution | **4.5x ROI** |
 
 ---
 
