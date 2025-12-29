@@ -12,12 +12,8 @@ The requested budget is intended to:
 
 Within the ₳1,500,000 total:
 
-- 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure; and
-- 20% is dedicated to the **Vision 2030 KPI Measurement Programme**:
-
-  - an initial **"State of Cardano DeFi" baseline report**,
-  - a public **Vision 2030 KPI dashboard**, and
-  - a final **6-month progress report**,
+- 80% is dedicated to engineering, operations and security for the Hydra trading infrastructure.
+- 20% is dedicated to the **Vision 2030 KPI Measurement Programme**: an initial **"State of Cardano DeFi" baseline report**, a public **Vision 2030 KPI dashboard**, and a final **6-month progress report**.
 
 ---
 
@@ -37,26 +33,19 @@ Today, most Cardano trading happens on AMM-style DEXs. They are great for simple
 - **Instant, predictable fills** for API and bot-driven strategies; or
 - **Professional market-makers and arbitrageurs** who expect CEX-like order-book behaviour.
 
-DeltaDeFi is designed to fill this gap: a **Hydra-based, low-latency order-book** with **tight spreads, fast matching** and **first-class API support**, so that ADA and CNT liquidity can be deployed efficiently and Cardano can compete more directly with order-book venues on other chains and on CEXs.
+DeltaDeFi is designed to fill this gap as a **Hydra-based, low-latency order-book** with tight spreads, fast matching and first-class API support, so that ADA and CNT liquidity can be deployed efficiently and Cardano can compete more directly with order-book venues on other chains and on CEXs.
 
-A performant, observable exchange is therefore not just another dApp, but part of Cardano’s **core infrastructure**. It supports the Constitution’s emphasis on **future development of the ecosystem** by making Cardano a more attractive base layer for capital, traders, and applications built around ADA and CNTs.
+A performant, observable exchange is therefore not just another dApp, but part of Cardano's **core infrastructure**. It supports the Constitution's emphasis on **future development of the ecosystem** by making Cardano a more attractive base layer for capital, traders, and applications built around ADA and CNTs.
 
 ## Why Hydra and why DeltaDeFi
 
-Hydra offers the latency and UX profile needed for modern trading but is still under-represented in production-grade, user-facing protocols. DeltaDeFi is:
-
-- A **Hydra-based, low-latency order-book DEX** already live in beta on mainnet;
-- Built by a team with an existing track record in:
-  - high-frequency trading tooling,
-  - Cardano SDKs and infrastructure, and
-  - Project Catalyst delivery; and
-- Focused on **spot trading and API-driven participants**, where reliable execution and transparent metrics matter most.
+Hydra offers the latency and UX profile needed for modern trading but is still under-represented in production-grade, user-facing protocols. DeltaDeFi is a **Hydra-based, low-latency order-book DEX** already live in beta on mainnet, built by a team with an existing track record in high-frequency trading tooling, Cardano SDKs and infrastructure, and Project Catalyst delivery, and focused on spot trading and API-driven participants where reliable execution and transparent metrics matter most.
 
 Earlier Project Catalyst funding helped bootstrap the current codebase and beta deployment with relatively modest budgets. This proposal is intended to take that work from "working beta" to **robust, measurable infrastructure** for the whole ecosystem.
 
-## Team Backgroun
+## Team Background
 
-DeltaDeFi is built by the same team behind **SIDAN Lab**, with a multi-year track record in the Cardano ecosystem:
+DeltaDeFi is built by the same team behind **SIDAN Lab**, with a multi-year track record in the Cardano ecosystem.
 
 - **MeshJS Core Maintainers**: The team maintains [MeshJS](https://meshjs.dev), the largest TypeScript SDK in the Cardano ecosystem, used by numerous dApps and developers for wallet integration, transaction building, and smart contract interaction.
 - **Stake Pool Operators & DReps**: Single SPO (SIDAN) since 2021 and an active DRep in Cardano governance.
@@ -71,19 +60,11 @@ This background in developer tooling and infrastructure directly informs DeltaDe
 
 From the point of view of ADA and CNT holders, the key questions are:
 
-- **How expensive is it to move size on Cardano?**
-  Slippage plus fees for 1k / 10k / 100k ADA trades in core pairs such as ADA/USDM.
+- How expensive is it to move size on Cardano (slippage plus fees for 1k / 10k / 100k ADA trades in core pairs such as ADA/USDM)?
+- How well aligned are ADA and major CNT prices across DEXs and with CEX prices (price gaps between on-chain venues and a simple CEX reference)?
+- How fragmented and inconsistent are CNT markets across Cardano DEXs (differences in price, depth and execution quality for the same tokens on different venues)?
 
-- **How well aligned are ADA and major CNT prices across DEXs and with CEX prices?**  
-  Price gaps between on-chain venues and a simple CEX reference.
-
-- **How fragmented and inconsistent are CNT markets across Cardano DEXs?**  
-  Differences in price, depth and execution quality for the same tokens on different venues.
-
-Today, answering these questions requires stitching together multiple tools and APIs. As part of this budget, DeltaDeFi will:
-
-- Deliver **tighter, deeper markets** on at least one Hydra-based venue; and
-- Publish a **Vision 2030 KPI dashboard** so ADA and CNT holders can track, in numbers, whether Cardano is progressing toward its DeFi vertical goals.
+Today, answering these questions requires stitching together multiple tools and APIs. As part of this budget, DeltaDeFi will deliver tighter, deeper markets on at least one Hydra-based venue and publish a **Vision 2030 KPI dashboard** so ADA and CNT holders can track, in numbers, whether Cardano is progressing toward its DeFi vertical goals.
 
 ---
 
@@ -99,26 +80,26 @@ Over the 6-month budget period, the work is grouped into three tightly scoped tr
 
 Key activities:
 
-- Improve **matching engine robustness**, latency and failure-mode handling on Hydra;
-- Strengthen **risk controls, monitoring and incident response** for production use;
-- Complete **security reviews and targeted audits** of critical components (on-chain scripts, Hydra integration);
-- Improve **API stability, documentation and sandbox environments** so professional traders and bots can integrate with confidence; and
-- Deliver and maintain a **public status page** for uptime and incident reporting.
+- Improve matching engine robustness, latency and failure-mode handling on Hydra.
+- Strengthen risk controls, monitoring and incident response for production use.
+- Complete security reviews and targeted audits of critical components (on-chain scripts, Hydra integration).
+- Improve API stability, documentation and sandbox environments so professional traders and bots can integrate with confidence.
+- Deliver and maintain a public status page for uptime and incident reporting.
 
 **Outcome:** Cardano has a live, hardened Hydra spot DEX that can realistically serve as a primary venue for order-book trading in ADA and key CNT pairs.
 
 ### 2. Scaling infrastructure and integrations
 
-**Goal:** ensure DeltaDeFi is **usable and visible as infrastructure**, not only as a stand-alone app.
+**Goal:** ensure DeltaDeFi is usable and visible as infrastructure, not only as a stand-alone app.
 
 Key activities:
 
-- Scale **Hydra and indexing infrastructure** to handle growing order and volume loads;
-- Improve **wallet and protocol integrations**, making it easy for users and other Cardano dApps to use DeltaDeFi as a liquidity source;
-- Extend markets to include other pairs, and selected CNT pairs where depth and tight spreads matter; and
-- Design the platform so that **AI-driven liquidity agents and automated trading systems** can integrate via APIs in future roadmap phases, without adding complexity to this budget period.
+- Scale Hydra and indexing infrastructure to handle growing order and volume loads.
+- Improve wallet and protocol integrations so users and other Cardano dApps can use DeltaDeFi as a liquidity source.
+- Extend markets to include more ADA and CNT pairs where depth and tight spreads matter.
+- Design the platform so that AI-driven liquidity agents and automated trading systems can integrate via APIs in future roadmap phases, without adding complexity to this budget period.
 
-**Outcome:** DeltaDeFi functions as a **reliable, API-friendly trading venue** that Cardano projects, CNT issuers and larger participants can build on.
+**Outcome:** DeltaDeFi functions as a reliable, API-friendly trading venue that Cardano projects, CNT issuers and larger participants can build on.
 
 ### 3. Vision 2030 KPI Measurement Programme
 
@@ -242,55 +223,32 @@ Any unused funds from completed phases will also be returned to the Treasury at 
 
 ## Budget and Administration
 
-**Total budget:** ₳1,500,000 over 6 months. Breakdown:
+**Total budget:** ₳1,500,000 over 6 months.
 
-- **₳1,120,000 – Hydra trading infrastructure**
-
-  - Core engineering for the matching engine, API, Hydra integration and indexers;
-  - Operations, infra and security (hosting, monitoring, incident response);
-  - Wallet and protocol integrations and production support.
-
-- **₳280,000 – Vision 2030 KPI Measurement Programme**
-
-  - Initial "State of Cardano DeFi" baseline report;
-  - Public Vision 2030 KPI dashboard implementation and maintenance;
-  - Final 6-month Vision 2030 progress report.
-
-- **₳100,000 – Administration and independent audit**
-  - Administration multisig operations (transaction fees, bookkeeping, reporting);
-  - **Independent financial and technical audits** of funded work and spending;
-  - Preparation and publication of audit summaries for the community.
+- **₳1,120,000 – Hydra trading infrastructure** (core engineering for the matching engine, API, Hydra integration and indexers; operations, infra and security; wallet and protocol integrations and production support).
+- **₳280,000 – Vision 2030 KPI Measurement Programme** (initial baseline report, dashboard implementation and maintenance, final 6-month progress report).
+- **₳100,000 – Administration and independent audit** (administration multisig operations, independent financial and technical audits of funded work and spending, and preparation and publication of audit summaries).
 
 ### Administration committee and multisig
 
-A future **Treasury Withdrawal GA** based on this Info Action will specify a **DeltaDeFi Administration Committee (DAC)** as the administrator for the budget. The intended DAC composition is as below:
+A future **Treasury Withdrawal GA** based on this Info Action will specify a **DeltaDeFi Administration Committee (DAC)** as the administrator for the budget.
 
-DeltaDeFi representatives:
+DAC members are intended to be:
 
-- **Hinson Wong** (Co-founder of DeltaDeFi)
-- **Anson Chui** (Co-founder of DeltaDeFi)
+- Hinson Wong (Co-founder, DeltaDeFi).
+- Anson Chui (Co-founder, DeltaDeFi).
+- Mike Hornan (Cardano Ambassador / Governance Educator).
+- James Meidinger (CEO, Freeblocks LLC / BizDev, USDM Moneta, in a non-representative capacity).
+- Hosky (ecosystem representative).
+- Shigeki Tabira (ecosystem representative, SIPO SPO / DRep).
 
-Ecosystem representatives:
+All Treasury-related funds and assets for this budget will be held under a **4-out-of-6 multisig** controlled by the DAC. Any movement of ADA from the administration addresses (for example, milestone disbursements or payment of audit costs) will require at least four signatures out of six.
 
-- **Mike Hornan** (Cardano Ambassador / Governance Educator)
-- **James Meidinger** (CEO, Freeblocks LLC / BizDev, USDM Moneta non-representative capacity)
-- **Hosky** (ecosystem representative)
-- **One additional community / ecosystem representative (TBC)**
-
-All Treasury-related funds and assets for this budget will be held under a **4-out-of-6 multisig** controlled by the DAC. Any movement of ADA from the administration addresses (for example, milestone disbursements, payment of audit costs) will require at least **four affirmative signatures out of six**.
-
-The Withdrawal GA will also specify that:
-
-- Funds are held in **segregated, publicly auditable addresses**, separate from other project funds or personal wallets;
-- These addresses are **delegated to the auto-abstain option and never to SPOs**, in line with the Constitution; and
-- Funds will be released according to the **Fund Release Schedule** above:
-  - **Phase 1 (₳560,000)** and **Phase 2 (₳560,000)** cover the ₳1,120,000 infrastructure development budget;
-  - **Phase 3 (₳380,000)** covers the ₳280,000 Vision 2030 KPI Measurement Programme and ₳100,000 administration/audit costs, payable upon end-of-period delivery and DAC multisig sign-off.
+The Withdrawal GA will also specify that funds are held in segregated, publicly auditable addresses, separate from other project funds or personal wallets, that these addresses are delegated to the auto-abstain option and never to SPOs, in line with the Constitution, and that funds are released according to the Fund Release Schedule above (Phase 1 and 2 for infrastructure, Phase 3 for the KPI programme and admin/audit costs, payable upon end-of-period delivery and DAC sign-off).
 
 ### Independent audit and review
 
-- Part of the **₳100,000 administration and audit budget** will fund an **independent auditor**, in line with the Cardano Constitution’s auditor requirement for Treasury-funded work.
-- The Treasury Withdrawal GA will specify the auditor’s role, scope and reporting cadence, and audit results will be summarised publicly so the community can verify how funds were used.
+Part of the **₳100,000 administration and audit budget** will fund an **independent auditor**, in line with the Cardano Constitution's auditor requirement for Treasury-funded work. The Treasury Withdrawal GA will specify the auditor's role, scope and reporting cadence, and audit results will be summarised publicly so the community can verify how funds were used.
 
 ---
 
@@ -388,36 +346,26 @@ This aligns with Vision 2030's L2 integration strategy: "high-volume activity ca
 
 - **Purpose**
 
-  - This proposal is for work intended to enhance the **liquidity, usability and long-term sustainability** of Cardano by providing Hydra-based trading infrastructure and transparent trading-quality metrics. It fits within **Article IV.1** as a budget for the future development of the ecosystem.
+  This proposal is for work intended to enhance the **liquidity, usability and long-term sustainability** of Cardano by providing Hydra-based trading infrastructure and transparent trading-quality metrics. It fits within **Article IV.1** as a budget for the future development of the ecosystem.
 
 - **Article III.5 – On-chain governance process**
 
-  - The proposal will be submitted in a clear, standard format with:
-    - Title, abstract, motivation and rationale; and
-    - A URL and content hash for this off-chain document.
+  The proposal will be submitted in a clear, standard format with a title, abstract, motivation and rationale, plus a URL and content hash for this off-chain document.
 
 - **Info Action nature**
 
-  - This is a **Budget Info Action**, not a Treasury Withdrawal:
-    - It **does not move any ADA** from the Treasury; and
-    - It records DRep and community sentiment on whether a **₳1,500,000, 6-month budget** for DeltaDeFi Hydra trading infrastructure and market-quality metrics is desirable in principle.
+  This is a **Budget Info Action**, not a Treasury Withdrawal. It does not move any ADA from the Treasury and it records DRep and community sentiment on whether a **₳1,500,000, 6-month budget** for DeltaDeFi Hydra trading infrastructure and market-quality metrics is desirable in principle.
 
 - **Article IV – Budgets and Treasury Withdrawals (future work)**
-  - Any subsequent Treasury Withdrawal GA based on this Info Action will:
-    - Respect the **Net Change Limit (NCL)** in effect at the time (amount and timing);
-    - Specify an administrator and administration model in line with **Article IV.2**;
-    - Make explicit provision for **an independent auditor and audit process** in line with Article IV.4 (including dedicated budget and reporting expectations).
-    - Ensure funds are held in **segregated, auto-abstain-delegated addresses** while under administration.
+
+  Any subsequent Treasury Withdrawal GA based on this Info Action will respect the **Net Change Limit (NCL)** in effect at the time (amount and timing), specify an administrator and administration model in line with **Article IV.2**, make explicit provision for an independent auditor and audit process in line with Article IV.4 (including dedicated budget and reporting expectations), and ensure funds are held in segregated, auto-abstain-delegated addresses while under administration.
 
 ---
 
 # Conclusion
 
-This Budget Info Action asks whether the Cardano community supports dedicating **₳1,500,000 over 6 months** to:
-
-- Harden and scale **DeltaDeFi** into a production-grade Hydra trading venue for ADA and key CNT pairs; and
-- Deliver a **Vision 2030 KPI Measurement Programme** with baseline report, public dashboard, and progress report tracking DeFi infrastructure contribution to ecosystem goals.
+This Budget Info Action asks whether the Cardano community supports dedicating **₳1,500,000 over 6 months** to harden and scale **DeltaDeFi** into a production-grade Hydra trading venue for ADA and key CNT pairs, and to deliver a **Vision 2030 KPI Measurement Programme** with baseline report, public dashboard and progress report tracking DeFi infrastructure contribution to ecosystem goals.
 
 The intent is not to fund a niche application, but to strengthen **Cardano's core trading infrastructure** in alignment with **Vision 2030's DeFi vertical** ("institutional-grade liquidity and usable Cardano-native DeFi") and provide measurable data on progress toward ecosystem KPIs.
 
-Voters are not yet asked to approve any withdrawals. They are asked to signal whether this direction — **supporting Hydra-based trading infrastructure and Vision 2030-aligned KPI measurement** — is a good use of Treasury budgeting for the next 6 months.
+Voters are not yet asked to approve any withdrawals. They are asked to signal whether this direction — supporting Hydra-based trading infrastructure and Vision 2030-aligned KPI measurement — is a good use of Treasury budgeting for the next 6 months.
