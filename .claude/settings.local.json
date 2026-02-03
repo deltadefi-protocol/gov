@@ -9,5 +9,9 @@
       "mcp__cgov-mcp__get_vision_section",
       "WebSearch"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "cgov-mcp"
+  ],
+  "enableAllProjectMcpServers": true
 }
