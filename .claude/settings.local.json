@@ -7,11 +7,12 @@
       "mcp__cgov-mcp__get_vision_kpis",
       "mcp__cgov-mcp__search_vision_2030",
       "mcp__cgov-mcp__get_vision_section",
-      "WebSearch"
+      "WebSearch",
+      "mcp__cgov-mcp__search_voting_rationale"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "cgov-mcp"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
