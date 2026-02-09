@@ -25,7 +25,7 @@ This follows precedent. Several DReps referenced the SNEK loan structure as a mo
 ### Treasury return
 
 - We acknowledge DeltaDeFi is a private initiative, and repayment to treasury is the primary accountability mechanism
-- 50% profit-sharing with treasury, executed monthly, until 100% of the budget is repaid
+- 50% revenue-sharing with treasury, executed monthly, until 100% of the budget is repaid
 - No further treasury withdrawal request will be submitted until fully repaid
 - If this proposal succeeds, we commit to establishing a permanent revenue-sharing arrangement with the Cardano treasury in a follow-up proposal
 
