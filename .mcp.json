@@ -2,7 +2,7 @@
   "mcpServers": {
     "cgov-mcp": {
       "type": "http",
-      "url": "http://localhost:3000/mcp"
+      "url": "https://cgov-mcp-589811450826.asia-south1.run.app/mcp"
     }
   }
 }
