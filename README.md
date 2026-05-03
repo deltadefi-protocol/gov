@@ -7,8 +7,11 @@ Central repository documenting DeltaDeFi's participation in Cardano governance.
 ```
 gov/
 ├── hydra-trading-infrastructure-budget/   # Treasury Withdrawal Governance Action
-│   ├── 1st-draft/                         # Initial proposal drafts
-│   └── 2nd-draft/                         # Revised proposal
+│   ├── 1st-draft/                         # Initial proposal drafts (Info Action, ₳1.5M / 6mo)
+│   ├── 2nd-draft/                         # Direction notes after 1st-draft NO vote
+│   └── 3rd-draft/                         # Current draft — Treasury Withdrawal, ₳5M / 24mo
+│       ├── treasury-withdrawal.md         # English version
+│       └── treasury-withdrawal.ja.md      # Japanese version
 ├── cb-dao/                                # Cardano Builder DAO Proposal
 └── reports/                               # (Future) Governance contribution reports
 ```
@@ -17,18 +20,19 @@ gov/
 
 ### Hydra Trading Infrastructure Budget
 
-**Type:** Cardano Treasury Withdrawal (Info Action)
-**Amount:** ₳1,500,000 over 6 months
-**Status:** Drafting
+**Type:** Cardano Treasury Withdrawal (self-contained, per the January 2026 Constitution update)
+**Amount:** ₳5,000,000 over 24 months
+**Status:** Drafting (3rd draft)
 
-Budget proposal to harden DeltaDeFi into production-grade Hydra trading infrastructure for Cardano, including a Vision 2030 KPI Measurement Programme.
+Treasury investment in DeltaDeFi to scale a live Hydra-based order-book exchange — running on Cardano mainnet since Cardano Summit 2025 — into a flagship trading venue for the ecosystem. Structured as a treasury investment rather than a grant: 50% of retained trading fees flow back to the Treasury monthly until the ₳5M is fully repaid, then 15% in perpetuity, establishing a permanent income stream for ADA holders. Administered by Intersect via the 2025 TRSC framework.
 
-→ [View Latest Draft](./hydra-trading-infrastructure-budget/)
+→ [View Latest Draft (English)](./hydra-trading-infrastructure-budget/3rd-draft/treasury-withdrawal.md)
+→ [日本語版](./hydra-trading-infrastructure-budget/3rd-draft/treasury-withdrawal.ja.md)
 
 ### Cardano Builder DAO
 
 **Type:** CB-DAO Grant Proposal
-**Status:** In Progress
+**Status:** Passed (not funded)
 
 → [View Proposal](./cb-dao/)
 

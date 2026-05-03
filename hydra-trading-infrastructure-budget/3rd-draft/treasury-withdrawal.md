@@ -106,13 +106,24 @@ Every plausible outcome — full success, partial delivery, complete failure —
 
 # What this proposal funds
 
-## 24-month scope
+## Vision and 24-month roadmap
 
-This proposal funds 24 months of production hardening, operational scale-up, and progressive decentralization of the live DeltaDeFi venue.
+**Vision: Building the infrastructure of the future financial system.**
 
-The first six months are dedicated to specific production-hardening work on the existing live spot DEX. Months 7–24 cover continued hardening, operational scale-up, decentralization milestones, and directional exploration in three areas the team views as the most strategically important next-generation primitives: Real World Assets (RWAs), agentic trading infrastructure, and cross-chain liquidity integration.
+With DeltaDeFi's Hydra-based tech stack, a spectrum of networks — from fully permissioned venues operated by regulated institutions to fully permissionless venues like DeltaDeFi itself — can operate side by side and interoperate as a single execution surface. Value flows across the boundary between regulated and decentralized realms, rather than being trapped on one side.
 
-The team retains tactical flexibility within those directional areas. The trading-infrastructure space is moving too fast for honest 24-month feature commitments. Tactical priorities will be set by market conditions and ecosystem demand as they evolve. Treasury accountability is enforced through the financial structure described below.
+At the product layer, DeltaDeFi will look broadly similar to peer venues such as Hyperliquid: an order-book exchange surrounded by vaults, strategy primitives, and derivatives. The vision differs. Hyperliquid is building an open chain to host any financial activity. DeltaDeFi is building, more pragmatically, the stack for a future financial operating system — one that acknowledges the persistent need for permissioned layers (regulated venues, institutional custody, jurisdiction-bound assets) and treats interoperability between permissioned and permissionless systems as the central design problem.
+
+The 24 months funded by this proposal are the spot-DEX hardening, scale-up, and decentralization work that make those higher-order primitives possible. Roadmap by phase:
+
+| Phase | Months | Focus |
+| --- | --- | --- |
+| Phase 1 | 0–6 | Hardening core technology — Hydra, matching engine, product mix. AI-native platform foundations: MCP (Model Context Protocol) support, fine-grained access control on agentic accounts, open framework for AI trading strategies. |
+| Phase 2 | 7–12 | Multi-chain integration (BTC, Midnight, EVM). On-/off-ramp integrations. Community node operators introduced (binding milestone, see Decentralization). |
+| Phase 3 | 13–18 | Decentralization — DAO-based rotation of Hydra node operators (subject to upstream Hydra readiness). Product additions as demand is identified: RWA listings, additional financial derivatives. |
+| Phase 4 | 19–24 | Open governance in practice — token launch and operational governance handoff such that the DeltaDeFi team is replaceable for ongoing operation. The binding end-of-project commitment is operational open governance by Month 24; the M18 target above is aspirational and depends on Hydra readiness. |
+
+The existing DeltaDeFi platform is architected for these directions: items above are designed as feature integrations on the existing tech stack rather than ground-up rebuilds. Tactical sequencing within each phase remains flexible — the trading-infrastructure space moves too fast for honest 24-month feature commitments — and Treasury accountability is enforced through the financial structure described below.
 
 ## Two-pool budget structure
 
@@ -126,6 +137,8 @@ Total: ₳5,000,000 over 24 months — ~₳208,000/month average, lower than the
 ## Pool B operational design
 
 Pool B is operationally distinct from Pool A and warrants explicit description. The current $20,000 of in-house MM capital is the largest single proof point of capital efficiency in this proposal. Scaling that proven model to flagship-venue book sizes requires working capital deployed in the order book to generate the trading fees that pay the Treasury back, rather than capital consumed as engineering payroll.
+
+Order-book venues cannot bootstrap from zero working capital — depth attracts traders, traders generate fees, fees fund deeper depth. $20,000 of in-house MM capital was sufficient to prove the model and reach 169 active traders; reaching the volume tier where Treasury repayment becomes meaningful (see Repayment trajectory) requires book depth that retail-scale capital cannot supply. Pool B is the structural answer to that chicken-and-egg, not a discretionary ask.
 
 Operating market-making at flagship-venue scale requires active custody and frequent movement of capital — between DeltaDeFi's own venue, hedging counterparties, off-exchange wallets, and cross-venue transfers. Pool B therefore cannot be held statically in segregated TRSC custody the way Pool A tranches are. The accountability mechanism for Pool B is structurally different: continuous transparency and a diversion clawback, rather than static custody.
 
@@ -168,6 +181,21 @@ During the repayment period:
 After repayment is complete:
 - DeltaDeFi remits 15% of retained trading fees to the Cardano Treasury in perpetuity, on the same monthly cadence and using the same revenue definition.
 - The 15% perpetual share is the primary long-term return to the Treasury, establishing an indefinite income stream for ADA holders for the life of the protocol.
+
+## Repayment trajectory
+
+At ₳1 = $0.25, ₳5,000,000 ≈ $1,250,000 USD. With a 0.10% per-trade fee and the 50% Treasury share applied to retained fees, the Treasury's effective share is ~0.05% (5 bps) of matched volume. Time-to-full-repayment is therefore a direct function of sustained monthly volume.
+
+The 24-month operational ramp targeted by this proposal is an S-curve: slow during Phase 1 hardening, steep through Phases 2–3 as Pool B is deployed, multi-chain integration goes live, and node operators come online, approaching the $10M/day target by Month 24. The ramp explicitly assumes volume across multiple chains (BTC, EVM, Midnight, Cardano), not Cardano-native pairs alone — the multi-chain integration in Phase 2 is what unlocks the addressable volume needed.
+
+| Phase end | Target daily volume | Target monthly volume | Approx. monthly Treasury remittance | Approx. cumulative remitted by phase end |
+| --- | --- | --- | --- | --- |
+| End of Phase 1 (M6) | ~$50K | ~$1.5M | ~$750 | ~$25K |
+| End of Phase 2 (M12) | ~$1M | ~$30M | ~$15K | ~$200K |
+| End of Phase 3 (M18) | ~$5M | ~$150M | ~$75K | ~$1.0M |
+| End of Phase 4 (M24) | ~$10M | ~$300M | ~$150K | ~$2.5M |
+
+Under this trajectory, the ₳5,000,000 principal is fully repaid mid-Phase 4, with the perpetual 15% Treasury share continuing thereafter for the life of the protocol. The trajectory is a target, not a guarantee — if the ramp slips, repayment slips with it, and the perpetual 15% share continues regardless of how fast principal is repaid. The ramp and resulting repayment are tracked publicly via the monthly transparency commitments below.
 
 ## Treasury's position relative to other claimants
 
@@ -227,9 +255,12 @@ The proposal commits to the following refund and clawback clauses:
 
 DeltaDeFi maintains a public decentralization roadmap at deltadefi.io, structured around the principle that decentralization is the goal and Hydra protocol maturity is the prerequisite.
 
-Within the 24-month period covered by this proposal, DeltaDeFi commits to introducing community node operators by Month 12 — the next defined milestone on that roadmap, and a binary, auditable commitment that the third-party assurer can verify.
+Two binding commitments within this proposal's window:
 
-Further roadmap items (community-driven smart contract auditing, token launch with open governance, full trustless operation) are gated by upstream Hydra protocol features that DeltaDeFi cannot unilaterally schedule. The Month 12 community-operator commitment is what the team can credibly schedule and verify within this proposal's window.
+- **By Month 12** — community node operators introduced. Binary, auditable, verified by the third-party assurer.
+- **By Month 24** — operational open governance live. Token launched, governance over node-operator selection in the hands of token holders, and the DeltaDeFi team operationally replaceable for ongoing operation of the venue. This is the binding end-of-project commitment.
+
+Within that window, the team aims to hit the open-governance milestone by Month 18 so that Months 19–24 are spent practising the governance mechanism in production rather than launching it. That M18 target depends on upstream Hydra readiness for trustless multi-operator setups, which DeltaDeFi cannot unilaterally schedule. If Hydra readiness slips, the M18 aspirational target slips with it; the M24 binding commitment does not.
 
 All operator-related code, smart contracts, and protocol tooling released during this period will be Apache-2.0 licensed, consistent with the existing `deltadefi-protocol` GitHub organisation.
 
