@@ -1,19 +1,27 @@
-# DeltaDeFi: Cardano's Flagship Exchange — Treasury Withdrawal (₳5,000,000)
+# DeltaDeFi Treasury Loan (₳5,000,000) — Full Repayment + Perpetual Revenue Share to ADA Holders
 
 # Abstract
 
-DeltaDeFi proposes a ₳5,000,000 investment from the Cardano Treasury over 24 months, paired with a binding repayment structure and a perpetual revenue share that returns value to ADA holders for the life of the protocol.
+DeltaDeFi proposes a ₳5,000,000 loan from the Cardano Treasury over 24 months, with full repayment plus a perpetual revenue share to ADA holders for the life of the protocol.
 
-DeltaDeFi is a Hydra-based, low-latency order-book exchange that has been live on Cardano mainnet since Cardano Summit 2025. With $20,000 of in-house market-making capital deployed, the venue currently holds the best execution price for ADA on Cardano at a 20 bps spread on ADA/USDCx, has matched $607,000 of cumulative trading volume, and serves 169 active traders. Working infrastructure is running today; this proposal funds its hardening and scale-up.
+DeltaDeFi is a Hydra-based, low-latency order-book exchange live on Cardano mainnet since Cardano Summit 2025. With $20,000 of in-house market-making capital, it holds the best ADA execution price on Cardano (20 bps spread on ADA/USDCx), has matched $607,000 of cumulative volume, and serves 169 active traders. This proposal funds hardening and scale-up.
 
-The investment terms:
+Loan terms:
 
 - ₳5,000,000 ADA-denominated, disbursed in two pools across 24 months
-- 50% of retained trading fees flow back to the Cardano Treasury monthly until the ₳5,000,000 is fully repaid
-- 15% of retained trading fees flow to the Cardano Treasury in perpetuity once principal is repaid, establishing a permanent income stream for ADA holders
-- All funds administered by Intersect via the 2025 TRSC framework, with a third-party assurer validating each milestone
+- 50% of retained trading fees remitted monthly until ₳5,000,000 is fully repaid
+- 15% of retained trading fees remitted in perpetuity thereafter — a permanent income stream for ADA holders
+- Administered by Intersect via the 2025 TRSC framework, with a third-party assurer validating each milestone
 
-The aim is to fill a strategic gap in the Cardano ecosystem — the absence of a flagship exchange — and to establish a treasury-investment model that returns value to ADA holders.
+## Changes from previous draft
+
+The ₳1,500,000 / 6-month draft was rejected by ~82.6% of DRep voting power. This proposal addresses the five most-cited objections:
+
+- **Repayable loan with perpetual upside**, not a grant
+- **Concrete liquidity** via an in-house MM model already live on mainnet
+- **Two binding, auditable decentralization milestones** at M12 and M24
+- **Proprietary KPI dashboard removed**; average monthly burn is lower
+- **Three months of mainnet evidence** replaces pre-launch projections
 
 ---
 
@@ -197,6 +205,10 @@ The 24-month operational ramp targeted by this proposal is an S-curve: slow duri
 
 Under this trajectory, the ₳5,000,000 principal is fully repaid mid-Phase 4, with the perpetual 15% Treasury share continuing thereafter for the life of the protocol. The trajectory is a target, not a guarantee — if the ramp slips, repayment slips with it, and the perpetual 15% share continues regardless of how fast principal is repaid. The ramp and resulting repayment are tracked publicly via the monthly transparency commitments below.
 
+**Pessimistic stress test.** If volume tracks at $2M/day at M24 (5× below base) — with checkpoint floors of ~$30K/day at M6, ~$200K/day at M12, and ~$700K/day at M18 — monthly Treasury remittance at M24 is ~$30K and ~40% of principal is repaid by M24. The loan structure holds: ADA-denominated repayment continues at ~$30K/month thereafter until ₳5,000,000 is fully returned, then the 15% perpetual share applies.
+
+**Halt-and-refund floor.** At each 6-month checkpoint, if actual volume tracks below this pessimistic case **and** no material forward evidence exists (signed RWA letters of intent, integration commitments, executed multi-chain launches awaiting go-live), DeltaDeFi will halt the project and return Pool B to the Treasury (see Refund and clawback).
+
 ## Treasury's position relative to other claimants
 
 The Treasury share is structurally senior to all internal protocol-level distributions. The 50% / 15% applies to the gross retained-fee base and is computed first; DeltaDeFi cannot dilute the Treasury share by introducing or modifying internal allocation mechanisms.
@@ -242,6 +254,7 @@ The proposal commits to the following refund and clawback clauses:
 | Trigger | Cure Window | Action |
 | --- | --- | --- |
 | Milestone failure — third-party assurer determines a phase milestone has not been met | 90 days | Suspended phase tranche withheld; if uncured, all undisbursed funds clawed back to the Treasury |
+| Insufficient progress — at a 6-month checkpoint, actual volume tracks below the pessimistic trajectory and no material forward evidence (signed RWA LoIs, integration commitments, executed multi-chain launches awaiting go-live) is present | 30 days | Project halted; remaining Pool A undisbursed funds clawed back; Pool B returned to the Treasury to the extent recoverable |
 | Team dissolution — DeltaDeFi entity ceases operations or core team departs | 30 days | All undisbursed funds returned + all unspent disbursed Pool A funds returned + Pool B returned to the extent recoverable |
 | Voluntary termination — DeltaDeFi voluntarily withdraws from the engagement | 30 days | Same as team dissolution |
 | Pool B diversion — third-party assurer determines Pool B funds have been used for purposes other than the stated MM mandate (DeltaDeFi market-making operations and the cross-venue movements / hedging required to support them) | 30 days | Diverted amount returned in full + project suspension review |
