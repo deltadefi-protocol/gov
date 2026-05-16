@@ -17,11 +17,11 @@ Loan terms:
 
 The ₳1,500,000 / 6-month draft was rejected by ~82.6% of DRep voting power. This proposal addresses the five most-cited objections:
 
-- **Repayable loan with perpetual upside**, not a grant
-- **Concrete liquidity** via an in-house MM model already live on mainnet
-- **Two binding, auditable decentralization milestones** at M12 and M24
-- **Proprietary KPI dashboard removed**; average monthly burn is lower
-- **Three months of mainnet evidence** replaces pre-launch projections
+- Repayable loan with perpetual upside, not a grant
+- Concrete liquidity via an in-house MM model already live on mainnet
+- Two binding, auditable decentralization milestones at M12 and M24
+- Proprietary KPI dashboard removed; average monthly burn is lower
+- Three months of mainnet evidence replaces pre-launch projections
 
 ---
 
@@ -76,11 +76,11 @@ The venue works today. This proposal funds the scale-up — on terms designed to
 
 DeltaDeFi is built by SIDAN Lab. The team's case for execution rests on what is already running on mainnet today.
 
-**Live execution.** Three months of production mainnet trading demonstrates execution capability concretely. Every claim in this proposal is verifiable on-chain right now: the spread, the volume, the user count, the smart contract code, the matching engine behaviour. Concept-validation has already happened, with no Treasury support, before this proposal was written.
+Live execution. Three months of production mainnet trading demonstrates execution capability concretely. Every claim in this proposal is verifiable on-chain right now: the spread, the volume, the user count, the smart contract code, the matching engine behaviour. Concept-validation has already happened, with no Treasury support, before this proposal was written.
 
-**Long-term Cardano commitment.** SIDAN has operated as a single Stake Pool Operator since 2021 and has been an active DRep in Cardano governance. The Cardano Hong Kong community organised by SIDAN runs local meetups, workshops, and developer education on a continuing basis. Two of the team's principals — Hinson Wong (CEO) and Neal Lam — are recognised Cardano Ambassadors, the formal recognition programme run by the Cardano Foundation for individuals making sustained, verifiable contributions to the ecosystem. Ambassador status is granted and maintained on the basis of ongoing community work, public education, and ecosystem advocacy, and requires identifiable individuals with public track records. The team has been contributing to Cardano for the duration of the network's existence, with Foundation-recognised standing in the community.
+Long-term Cardano commitment. SIDAN has operated as a single Stake Pool Operator since 2021 and has been an active DRep in Cardano governance. The Cardano Hong Kong community organised by SIDAN runs local meetups, workshops, and developer education on a continuing basis. Two of the team's principals — Hinson Wong (CEO) and Neal Lam — are recognised Cardano Ambassadors, the formal recognition programme run by the Cardano Foundation for individuals making sustained, verifiable contributions to the ecosystem. Ambassador status is granted and maintained on the basis of ongoing community work, public education, and ecosystem advocacy, and requires identifiable individuals with public track records. The team has been contributing to Cardano for the duration of the network's existence, with Foundation-recognised standing in the community.
 
-**Verifiable identities and open-source surface area.** The co-founders are verifiable individuals with auditable backgrounds — Hinson Wong (CEO, ex-Citi, CFA), Anson Chui (COO, CISSP and CISA certified), Jackal Leung (CTO, 5+ years full-stack engineering). The `deltadefi-protocol` GitHub organisation maintains 14+ public repositories, all Apache-2.0 licensed, including the smart contracts, transaction-building libraries, and SDKs across TypeScript, Python, Go, and Rust. The team also contributes to Whisky, Vodka, and Hydra (forked, contributing). Code written in service of DeltaDeFi is in the open and reviewable.
+Verifiable identities and open-source surface area. The co-founders are verifiable individuals with auditable backgrounds — Hinson Wong (CEO, ex-Citi, CFA), Anson Chui (COO, CISSP and CISA certified), Jackal Leung (CTO, 5+ years full-stack engineering). The `deltadefi-protocol` GitHub organisation maintains 14+ public repositories, all Apache-2.0 licensed, including the smart contracts, transaction-building libraries, and SDKs across TypeScript, Python, Go, and Rust. The team also contributes to Whisky, Vodka, and Hydra (forked, contributing). Code written in service of DeltaDeFi is in the open and reviewable.
 
 ---
 
@@ -116,7 +116,7 @@ Every plausible outcome — full success, partial delivery, complete failure —
 
 ## Vision and 24-month roadmap
 
-**Vision: Building the infrastructure of the future financial system.**
+Vision: Building the infrastructure of the future financial system.
 
 With DeltaDeFi's Hydra-based tech stack, a spectrum of networks — from fully permissioned venues operated by regulated institutions to fully permissionless venues like DeltaDeFi itself — can operate side by side and interoperate as a single execution surface. Value flows across the boundary between regulated and decentralized realms, rather than being trapped on one side.
 
@@ -205,9 +205,23 @@ The 24-month operational ramp targeted by this proposal is an S-curve: slow duri
 
 Under this trajectory, the ₳5,000,000 principal is fully repaid mid-Phase 4, with the perpetual 15% Treasury share continuing thereafter for the life of the protocol. The trajectory is a target, not a guarantee — if the ramp slips, repayment slips with it, and the perpetual 15% share continues regardless of how fast principal is repaid. The ramp and resulting repayment are tracked publicly via the monthly transparency commitments below.
 
-**Pessimistic stress test.** If volume tracks at $2M/day at M24 (5× below base) — with checkpoint floors of ~$30K/day at M6, ~$200K/day at M12, and ~$700K/day at M18 — monthly Treasury remittance at M24 is ~$30K and ~40% of principal is repaid by M24. The loan structure holds: ADA-denominated repayment continues at ~$30K/month thereafter until ₳5,000,000 is fully returned, then the 15% perpetual share applies.
+Pessimistic stress test. If volume tracks at $2M/day at M24 (5× below base) — with checkpoint floors of ~$30K/day at M6, ~$200K/day at M12, and ~$700K/day at M18 — monthly Treasury remittance at M24 is ~$30K and ~40% of principal is repaid by M24. The loan structure holds: ADA-denominated repayment continues at ~$30K/month thereafter until ₳5,000,000 is fully returned, then the 15% perpetual share applies.
 
-**Halt-and-refund floor.** At each 6-month checkpoint, if actual volume tracks below this pessimistic case **and** no material forward evidence exists (signed RWA letters of intent, integration commitments, executed multi-chain launches awaiting go-live), DeltaDeFi will halt the project and return Pool B to the Treasury (see Refund and clawback).
+Halt-and-refund floor. At each 6-month checkpoint, if actual volume tracks below this pessimistic case and no material forward evidence exists, DeltaDeFi will halt the project and return Pool B to the Treasury (see Refund and clawback).
+
+"Material forward evidence" is defined strictly, so it cannot be manufactured to dodge the halt clause. It means one or more of the following, evidenced in writing and verifiable by the DRep community:
+
+- Binding RWA letters of intent that commit the counterparty to execution within 90 days of the checkpoint date, with defined volume or scope — non-binding, undated, or open-ended LoIs do not qualify;
+- Executed integration agreements (signed contracts, not term sheets) with a named counterparty and a committed delivery date;
+- Multi-chain launches with code already deployed to the target chain's mainnet or testnet and a publicly confirmed go-live date within 90 days;
+- A financial product introduced on DeltaDeFi that does not currently exist anywhere on Cardano, evidenced by deployed on-chain contracts and a publicly confirmed go-live date within 90 days;
+- Any other evidence type not listed here, in recognition of a fast-changing market, provided it is approved in writing by an Intersect administrator.
+
+Pipeline discussions, marketing announcements, and intent expressed without a binding commitment and a dated execution window are explicitly excluded, unless they fall under an Intersect administrator-approved exception above.
+
+Checkpoint transparency. Within 14 days of the third-party assurer's verdict at each 6-month checkpoint, DeltaDeFi will publicly post the complete basis for that determination: the measured volume data against the pessimistic-case floor for that checkpoint, and the full material-forward-evidence list relied on — binding LoIs, executed integration agreements, deployment records, and any Intersect administrator-approved exceptions — together with the supporting documents. This makes the halt-floor mechanism auditable by the DRep community in real time rather than after the fact, and puts the assurer's verdict and the evidence behind it on the public record.
+
+Confidentiality exception. Documents protected by confidentiality obligations are exempt from full public disclosure. As a middle ground, where the business and legal terms of the relevant agreement permit, DeltaDeFi will publish a redacted version that discloses at minimum the counterparty's identity, the dated commitment, and the scope or volume covered, withholding only the terms the agreement requires to be kept confidential. Where even a redacted version is not permitted, the document is instead disclosed in full and confidentially to the third-party assurer, who confirms in the public checkpoint report that the evidence was verified — so a confidentiality obligation never removes a piece of evidence from independent scrutiny, only from the public record.
 
 ## Treasury's position relative to other claimants
 
@@ -222,6 +236,9 @@ Quarterly:
 - Public published market-making PnL for Pool-B-deployed capital, with book composition as of period end
 - Public progress report against milestone deliverables for the current phase
 - Independent third-party assurer report
+
+At each 6-month checkpoint:
+- Within 14 days of the third-party assurer's verdict: public disclosure of the volume data and the full material-forward-evidence list used for the halt-floor determination, with supporting documents (see Checkpoint transparency under Repayment trajectory)
 
 These transparency commitments persist for the full life of the perpetual revenue share, well beyond the 24-month build period.
 
@@ -254,13 +271,19 @@ The proposal commits to the following refund and clawback clauses:
 | Trigger | Cure Window | Action |
 | --- | --- | --- |
 | Milestone failure — third-party assurer determines a phase milestone has not been met | 90 days | Suspended phase tranche withheld; if uncured, all undisbursed funds clawed back to the Treasury |
-| Insufficient progress — at a 6-month checkpoint, actual volume tracks below the pessimistic trajectory and no material forward evidence (signed RWA LoIs, integration commitments, executed multi-chain launches awaiting go-live) is present | 30 days | Project halted; remaining Pool A undisbursed funds clawed back; Pool B returned to the Treasury to the extent recoverable |
-| Team dissolution — DeltaDeFi entity ceases operations or core team departs | 30 days | All undisbursed funds returned + all unspent disbursed Pool A funds returned + Pool B returned to the extent recoverable |
+| Insufficient progress — at a 6-month checkpoint, actual volume tracks below the pessimistic trajectory and no material forward evidence (as strictly defined under Halt-and-refund floor: binding RWA LoIs with execution committed within 90 days, executed integration agreements, or multi-chain launches with code deployed and a confirmed go-live date) is present | 30 days | Project halted; remaining Pool A undisbursed funds clawed back; Pool B returned to the Treasury, with at minimum 80% structurally protected (see Pool B recovery floor below) |
+| Team dissolution — DeltaDeFi entity ceases operations or core team departs | 30 days | All undisbursed funds returned + all unspent disbursed Pool A funds returned + Pool B returned, with at minimum 80% structurally protected (see Pool B recovery floor below) |
 | Voluntary termination — DeltaDeFi voluntarily withdraws from the engagement | 30 days | Same as team dissolution |
 | Pool B diversion — third-party assurer determines Pool B funds have been used for purposes other than the stated MM mandate (DeltaDeFi market-making operations and the cross-venue movements / hedging required to support them) | 30 days | Diverted amount returned in full + project suspension review |
 | Partial delivery — some phases delivered, others not | n/a | Only undelivered-phase funds refunded; delivered-phase work is paid for |
 
-"Pool B returned to the extent recoverable" reflects the operational reality that working capital deployed in market making is at risk in the same way any operating capital is at risk. The diversion clause and quarterly PnL transparency provide structural protection against misuse.
+Pool B recovery floor. Pool B is working capital deployed in market making, and is therefore at risk in the same way any operating capital is at risk — but that risk is bounded, not unbounded. DeltaDeFi commits to a hard floor: at minimum 80% of the Pool B capital base is structurally protected from market-making drawdown and always recoverable to the Treasury. This is enforced by a 20% maximum-drawdown cap on trading P&L — if cumulative trading-P&L losses reach 20% of the deployed Pool B base, market-making activity halts and the remaining capital is returned.
+
+The floor is expressed against the Pool B capital base as deployed — i.e. the inventory units the book is composed of — not against a fixed ADA figure. Anchoring it to a fixed ADA amount would contradict the purpose of the trading-P&L definition below, which is precisely to separate market-making performance from ADA price movement. The 80% that is protected, and the 20% that is at risk, are both measured the same way trading P&L is measured.
+
+Trading P&L is defined strictly as P&L caused by actual market-making activity, measured in the inventory's own units — it is *not* mark-to-market FX movement in the price of ADA. For example: ₳2,500,000 is converted into ₳1,250,000 + 350,000 stablecoins (ADA at $0.28). After market-making activity, the book holds ₳1,300,000 + 351,000 stablecoins. Even if ADA has fallen to $0.20 by the closing date, trading P&L is *positive* — market-making activity added ₳50,000 and 1,000 stablecoins to the book. ADA price exposure is a separate, non-MM factor and is not counted as a loss against the drawdown cap; conversely, it is not counted as trading profit either.
+
+The diversion clause and quarterly PnL transparency provide structural protection against misuse; the 80% recovery floor directly bounds the "capital evaporation" risk.
 
 ---
 
@@ -270,8 +293,8 @@ DeltaDeFi maintains a public decentralization roadmap at deltadefi.io, structure
 
 Two binding commitments within this proposal's window:
 
-- **By Month 12** — community node operators introduced. Binary, auditable, verified by the third-party assurer.
-- **By Month 24** — operational open governance live. Token launched, governance over node-operator selection in the hands of token holders, and the DeltaDeFi team operationally replaceable for ongoing operation of the venue. This is the binding end-of-project commitment.
+- By Month 12 — community node operators introduced. Binary, auditable, verified by the third-party assurer.
+- By Month 24 — operational open governance live. Token launched, governance over node-operator selection in the hands of token holders, and the DeltaDeFi team operationally replaceable for ongoing operation of the venue. This is the binding end-of-project commitment.
 
 Within that window, the team aims to hit the open-governance milestone by Month 18 so that Months 19–24 are spent practising the governance mechanism in production rather than launching it. That M18 target depends on upstream Hydra readiness for trustless multi-operator setups, which DeltaDeFi cannot unilaterally schedule. If Hydra readiness slips, the M18 aspirational target slips with it; the M24 binding commitment does not.
 
