@@ -1,4 +1,4 @@
-# DeltaDeFi Treasury Loan (₳5,000,000) — Full Repayment + Perpetual Revenue Share to ADA Holders
+# DeltaDeFi: Cardano Flagship Exchange: ₳5,000,000 Treasury Loan with Perpetual Upside
 
 # Abstract
 
